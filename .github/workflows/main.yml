@@ -15,7 +15,7 @@ jobs:
 
     - name: Build
       run: |
-        g++ -o LibraryManagementSystem libiry_managmen.cpp  # Replace with your main file name
+        g++ -o LibraryManagementSystem library_management.cpp  # Corrected file name
         if [ $? -eq 0 ]; then                # Check if build was successful
           echo "Build successful!"
         else
@@ -25,4 +25,4 @@ jobs:
 
     - name: Run Program
       run: |
-        ./libiry_managmen                  # Adjust based on your main program's execution
+        ./LibraryManagementSystem              # Adjust based on your main program's execution
