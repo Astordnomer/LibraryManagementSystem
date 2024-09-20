@@ -11,13 +11,18 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install g++
-      run: sudo apt-get install g++
+      run: sudo apt-get update && sudo apt-get install -y g++
 
     - name: Build
       run: |
-        g++ -o LibraryManagementSystem libiry_managmen.cpp  # Change main.cpp to your main file name
-        ./library_management                  # Run the executable
+        g++ -o LibraryManagementSystem libiry_managmen.cpp  # Replace with your main file name
+        if [ $? -eq 0 ]; then                # Check if build was successful
+          echo "Build successful!"
+        else
+          echo "Build failed!"
+          exit 1
+        fi
 
-    - name: Run Tests (if applicable)
+    - name: Run Program
       run: |
-        ./library_management                  # Adjust based on your testing setup
+        ./library_management                  # Adjust based on your main program's execution
