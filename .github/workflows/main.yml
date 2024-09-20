@@ -25,4 +25,4 @@ jobs:
 
     - name: Run Program
       run: |
-        ./library_management                  # Adjust based on your main program's execution
+        ./libiry_managmen                  # Adjust based on your main program's execution
