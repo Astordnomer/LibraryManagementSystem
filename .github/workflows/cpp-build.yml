@@ -17,7 +17,7 @@ jobs:
 
     - name: Build
       run: |
-        g++ -o library_management main.cpp  # Change main.cpp to your main file name
+        g++ -o LibraryManagementSystem main.cpp  # Change main.cpp to your main file name
         ./library_management                  # Run the executable
 
     - name: Run Tests (if applicable)
