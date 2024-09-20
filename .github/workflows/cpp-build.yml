@@ -1,0 +1,25 @@
+name: C++ Build and Test
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up C++
+      uses: actions/setup-cpp@v1
+      with:
+        gcc-version: '9'  # You can specify the version you need
+
+    - name: Build
+      run: |
+        g++ -o library_management main.cpp  # Change main.cpp to your main file name
+        ./library_management                  # Run the executable
+
+    - name: Run Tests (if applicable)
+      run: |
+        ./library_management                  # Adjust based on your testing setup
