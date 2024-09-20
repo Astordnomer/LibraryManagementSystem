@@ -1,2 +1,2 @@
 # LibraryManagementSystem
-A Library Management System implemented in C++ that allows users to manage books and members efficiently. Features include adding/removing books, borrowing/returning, and generating reports, all utilizing object-oriented programming principles for enhanced functionality.
+The Library Management System 📚 is a C++ application designed to manage books and members efficiently. It offers features like adding/removing books, borrowing/returning, and generating reports. Built with OOP and DSA for a smooth and reliable experience. 🚀✨
